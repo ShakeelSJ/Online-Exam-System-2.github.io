@@ -1,0 +1,241 @@
+@media(max-width:768px){
+    h1{font-size: 32px !important;}
+}
+
+@media (max-width: 767px){
+    .nested{
+        width: 100%;
+    }
+    .navbar-nav li ul{
+        position: relative;
+        right: 0%;
+        width: 100%;
+        text-align: left;
+    }
+    #navbar-scroll {
+        background: rgb(255,255,255) !important;
+        padding: 5px  0 !important;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4) !important;
+        transition-duration: 0.6s !important;
+    }
+    #navbar-scroll li a{
+        color: #fff !important;
+        font-weight: bold;
+    }
+    #navbar-scroll li a:hover{
+        color: rgb(0,188,212) !important;
+    }
+    #navbar-scroll .active>a{
+        color: rgb(0,188,212) !important;
+    }
+    #navbar-scroll .logo{
+        color: #444 !important;
+    }
+    #navbar-scroll .logo-text span{
+        color: rgb(0,188,212) !important;
+    }
+      /*-------------------- navbar close -----------------*/
+      /*------------------- top captions -------------------*/
+    .carousel-caption h3{
+        font-size: 15px;
+    }
+      /*---------------------- top captions close ------------*/
+      /*--------------------- responsive cards start ----------------------*/
+    .users .container-fluid{
+        display: inherit;
+    }
+    .users .container-fluid div{
+        width: 100%;
+    }
+    .user h2,.admin h2{
+        font-size: 25px;
+    }
+    .cards{
+        padding-left: 0 !important; 
+        padding-right: 0 !important; 
+    }
+    .user{
+        right: -5%;
+    }
+    .admin{
+        left: -5%;
+    }
+    .user div,.admin div{
+        bottom: -55%;
+    }
+    /*--------------------- responsive cards close ---------------------*/
+    
+    .explanation p{
+        padding: 0px;
+    }
+
+    /*--------------------- features cards start -----------------------*/
+    .features{
+        display: block;
+        width: 100%;
+    }
+    .features *{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .features_main_heading h2{
+        margin-bottom: 20px;
+    }
+    .features_home_image{
+        width: 100%;
+        min-height: 300px;
+    }
+    /* .features_home_content{
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    } */
+    .features_home_content{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .features_home_card h4{
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    /*--------------------- features cards close -----------------------*/
+    /*--------------------- demo start ----------------------*/
+    /* .demo{
+        height: 1380px;
+    } */
+    .demo div:nth-child(2){
+        display: inherit;
+    }
+    .demo div{
+        display: block;
+    }
+    .examiner_demo,.student_demo{
+        width: 95%;
+        display: block;
+    }
+    .student_demo h2,.examiner_demo h2{
+        font-size: 25px;
+    }
+    .example_image {
+        width: 75% !important;
+    }
+    /*--------------------- demo close ----------------------*/
+    /*--------------------- footer start --------------------*/
+    .footer{
+        display: inherit;
+    }
+    .footer>div{
+        width: 100% !important;
+    }
+    /*--------------------- footer close ---------------------*/
+
+    /*------------------------ about us page start ----------------------*/
+    /*------------------------  -----------------------------*/
+    .about{
+        width: 100%;
+        display: block;
+    }
+    .about>div{
+        width: 100% !important;
+        display: block;
+        float: none !important;
+    }
+    /*------------------------ about us page close ----------------------*/
+    /*------------------------  -----------------------------*/
+    
+    /*------------------------ features page start ----------------------*/
+    /*------------------------  -----------------------------*/
+    .features_main{
+        width: 100%;
+        display: block;
+    }
+    .features_main div,.features_main p,.features_main img{
+        width: 100% !important;
+        display: block !important;
+        float: none !important;
+        margin: 0 !important;
+    }
+    /*------------------------ features page close ----------------------*/
+    /*------------------------  -----------------------------*/
+
+
+    /*------------------------ contact page start ----------------------*/
+    /*------------------------  -----------------------------*/
+    .contact{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .contact section{
+        display: block !important;
+        width: 100%;
+    }
+    .map,.form{
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 30px;
+    }
+    .form{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .contact_box{
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /*------------------------ contact page close ----------------------*/
+    /*------------------------  -----------------------------*/
+}
+
+@media (max-width: 670px){
+    /* ----------------- responsive cards starts --------------- */
+    .cards{
+        display: block;
+    }
+    .user,.admin{
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        width: 100%;
+    }
+    .user h2,.admin h2{
+        font-size: 25px;
+    }
+    .cards{
+        padding-left: 50px !important; 
+        padding-right: 50px !important; 
+    }
+    .user div,.admin div{
+        bottom: -18%;
+        height: 15vh;
+    }
+    .line{
+        width: 100%;
+        height: 0;
+        border: 2px solid #000;
+        margin: 50px auto;
+        line-height: 0px;
+        text-align: center;
+    }
+    .line span{
+        margin: 0 auto;
+        margin-top: -50px;
+    }
+    /* ----------------- responsive cards close --------------- */
+}
+@media (max-width: 440px){
+    .user div,.admin div{
+        bottom: -30%;
+        height: 20vh;
+    }
+}
+@media (max-width: 380px){
+    .user div,.admin div{
+        bottom: -26%;
+        height: 17vh;
+    }
+}

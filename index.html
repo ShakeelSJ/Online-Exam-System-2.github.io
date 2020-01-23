@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination System</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/responsive_css.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+<body>
+    <div class="container-bg" id="main_image"></div>
+    <div id="main" style="z-index: -100">
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar-scroll">
+        <div class="navbar-header">
+            <div class="logo">
+                <span class="fas fa-book-reader logo-icon"></span> 
+                <p class="logo-text">
+                    OUR <span>LOGO</span>
+                </p> 
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#abc">		
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse navbar-right" id="abc">
+            
+            <ul class="nav navbar-nav">
+                <li data-toggle="collapse" data-target="#abc"><i class="fa fa-times"></i></li>
+                <li class="active"><a href="#" class="nav-li">HOME</a></li>
+                <li><a href="pages/about.html" class="nav-li">ABOUT US</a></li>
+                <li><a href="pages/features.html" class="nav-li">FEATURES</a></li>
+                <li><a href="pages/contact.html" class="nav-li">CONTACT US</a></li>
+                <li class="nested"><a href="pages/login.html" class="nav-li">LOGIN</a>
+                    <!-- <ul class="nested-nav">
+                        <li><a href="login.html" class="nav-li">EXAM LOGIN</a></li>
+                        <li><a href="login.html" class="nav-li">ADMIN LOGIN</a></li>
+                    </ul> -->
+                </li>
+                <!-- <li><a href="pages/contact.html" class="nav-li">SIGN UP</a></li> -->
+               
+            </ul>
+        </div>
+    </nav>
+        <div class="carousel-caption">
+            <h1>Online Exam System</h1>
+            <h3>Easy Way to Make Online Exams</h3>
+            <p>
+                <q> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. </q>
+            </p>
+            <!-- <button style="margin-top: 100px" class="btn btn-danger carousel-main-btn">SIGN UP</button> -->
+            <a href="pages/signUp.html" style="margin-top: 55px" class="btn btn-danger carousel-main-btn" role="button">SIGN UP</a>
+        </div>
+        <!-- <div class="carousel-indicators" >
+            
+        </div> -->
+    </div><!---------------------------------------------------------- main close ---------------------->
+        <!-- -------------------- Form ----------------------- -->
+        <div class="login-tab">
+
+                <form method="POST">
+                        <h2 class="hp2">LOGIN</h2>
+                    <div class="input-fields">
+                        
+                        <input type="text" placeholder="Email" required id="email">
+                        <i class="fa fa-envelope icon"></i>
+    
+                    </div>
+                    <div class="input-fields">
+                        
+                        <input type="password" placeholder="Password"  id="password">
+                        <i class="fa fa-lock icon"></i>
+    
+                    </div>
+                             <select required id="select">
+                                <option value="" disabled selected>Login as:</option>
+                                <option value="Student-l" >Student</option>
+                                <option value="Admin-l">Admin</option>
+                                <option value="Center-l">Center</option>
+                            </select><br>
+                    <input type="subbmit" value="LOGIN" id="buttn" onclick="function1()">
+                        <a href="pages/signUp.html">Creat Account </a>
+                        <br><br><br>
+                        <a href="index.html">Home</a>
+                    
+                </form>
+           
+            
+            
+        </div>
+        <div class="emergeny-mobile"></div>
+    <!-- ---------------End Form ----------------------- -->
+   
+    <!-- <div class="container-fluid cards" style="z-index: 100">
+        <div class="user">
+            <h2>Login As Examiner</h2>
+            <p><span class="fas fa-user"></span></p>
+            <button>User Login</button> -->
+            <!-- <div></div> -->
+            <!-- corss section  -->
+        <!-- </div> -->
+        
+        <!-- user close -->
+        <!-- <div class="line">
+            <span class="fas fa-users"></span>
+        </div> -->
+        <!-- line close -->
+        <!-- <div class="admin">
+            <h2>Login As Admin</h2>
+            <p><span class="fas fa-user-tie"></span></p>
+            <button>Admin Login</button>
+            <div></div> -->
+            <!-- cross section -->
+        <!-- </div> -->
+        <!-- admin close -->
+    <!-- </div> -->
+    <!--------------------------------- cards close ----------------------------------------------->
+   
+    <div class="container-fluid explanation"><!-- what is online test maker start -->
+        <div>
+            <h2>What is an online test maker?</h2>
+            <p>
+                An online test maker is a tool that helps teachers and trainers to easily create and assign online tests to learners. Online tests can easily be scheduled as they can be accessed anytime, anywhere. The tests are automatically graded saving instructors tons of time and effort. Online testing also offers detailed reports, which reveal knowledge gaps and provide insights into a learner’s overall performance.
+            </p>
+        </div>
+    </div><!-- what is online test maker close -->
+
+
+    <script>
+            $(document).ready(function() {
+                $('#working_carousel').owlCarousel({
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    navSpeed: 600,
+                    dotsSpeed: 600,
+                    rewind: true,
+                    margin:10,
+                    responsiveClass:true,
+                    infinite: false,
+                    autoplayHoverPause:true,
+                    responsive:{
+                        0:{
+                            items:1,
+                            nav:true,
+                            dots:true
+                        },
+                        768:{
+                            items: 2,
+                            nav:false,
+                            loop:false
+                        }
+                    }
+                })
+            });
+    </script>
+    <div id="working_carousel" class="owl-carousel owl-theme working container-fluid"><!----- working container --------->
+        <!---------------- four icons start ------------------->
+        <div class="item_working">
+            <div class="working_field">
+                <div class="working_icons" style=" background-size: 60px;background-image: url(images/2.png);"></div>
+                <p>Make Question</p>
+            </div>
+            <div class="working_field">
+                <div class="working_icons" style="background-size: 80px;background-image: url(images/3.png);"></div>
+                <p>Set Limits</p>
+            </div>
+        </div>
+        <div class="item_working">
+            <div class="working_field">
+                <div class="working_icons" style="background-size: 60px;background-image: url(images/4.png);"></div>
+                <p>Upload Test</p>
+            </div>    
+            <div class="working_field"> 
+                <div class="working_icons" style="background-size: 60px;background-image: url(images/5.png);"></div>
+                <p>Generate Result</p>
+            </div>    
+        </div>          
+        <!---------------- four icons end ------------------->
+    </div><!------------------------------------- working container close --------------------------->
+
+
+
+    <script>
+        $(document).ready(function() {
+            $('#carousel_buisness').owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 5000,
+                navSpeed: 600,
+                dotsSpeed: 600,
+                rewind: true,
+                margin:10,
+                responsiveClass:true,
+                infinite: false,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true,
+                        dots:true
+                    },
+                    768:{
+                        items: 2,
+                        nav:false,
+                        loop:false
+                    }
+                }
+            })
+            $('#carousel_teacher').owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 5000,
+                navSpeed: 600,
+                dotsSpeed: 600,
+                rewind: true,
+                margin:10,
+                responsiveClass:true,
+                infinite: false,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true,
+                        dots:true
+                    },
+                    768:{
+                        items: 3,
+                        nav:false,
+                        loop:false
+                    }
+                }
+            })
+        });
+    </script>
+    <div class="container-fluid users"><!------------------------user start  ------------------------------>
+        <div class="buisness"><!-------- buisness -------------->
+            <h2>What’s in it for businesses?</h2>
+            <p class="users_icons">
+                <span class="fas fa-users"></span>
+            </p>
+            <p class="users_para">
+                Using an online test maker, companies can create employee training tests, compliance tests, employee skill assessments, pre-hire tests and many more. For instance, trainers can use online tests as part of training to ensure that employees understand the materials being taught. Online testing can be used for a variety of purposes such as screening potential candidates, training existing employees on issues such as workplace harassment awareness, compliance requirements and more. Online tests can also be easily scheduled for employees located at different locations and their progress effectively tracked through online reports.
+            </p>
+            <p class="example_para">
+                    Examples:
+            </p>
+            <div id="carousel_buisness" class="owl-carousel owl-theme example example_buisness">
+                <div class="item_buisness">
+                    <div class="example_image">
+                        <img src="images/7.png" alt="7">
+                    </div>
+                    <span>Employee Training</span>
+                </div>
+                <div class="item_buisness">
+                    <div class="example_image">
+                        <img src="images/8.png" alt="7">
+                    </div>
+                    <span>Compliance Training</span>
+                </div>
+            </div>
+        </div><!-------- buisness close -------------->
+        <div class="teachers"><!-------- teacher -------------->
+            <h2>What’s in it for teachers?</h2>
+            <p class="users_icons">
+                <span class="fas fa-user-graduate"></span>
+            </p>
+            <p class="users_para">
+                Online Quiz Maker for teachers can help them in creating online tests and save tons of efforts. The tests are automatically graded with the results instantly available to students, so that teachers don’t have to spend hours grading test-papers. They can create practice tests to support daily classes or assess learners at the end of a semester with secure online exams. Advanced test reports help teachers to identify knowledge gaps and understand how to improve the learning experience of their students.
+            </p>
+            <p class="example_para">
+                Examples:
+            </p>
+            <div id="carousel_teacher" class="owl-carousel owl-theme example example_teacher">
+                <div class="item_teacher">
+                    <div class="example_image">
+                        <img src="images/9.png" alt="7">
+                    </div>
+                    <span>Geography Tests</span>
+                </div>
+                <div class="item_teacher">
+                    <div class="example_image">
+                        <img src="images/10.png" alt="7">
+                    </div>
+                    <span>Adult Learning Tests</span>
+                </div>
+                <div class="item_teacher">
+                    <div class="example_image">
+                        <img src="images/11.png" alt="7">
+                    </div>
+                    <span>Physical Education Tests</span>
+                </div>
+            </div>
+        </div><!-------- teacher close -------------->
+    </div><!------------------------------------ user close ------------------------------>
+
+    <div class="container-fluid features"><!-------------- features start  ------------------------>
+        <div class="features_home_image">
+
+        </div>
+        <div class="features_home_content">
+            <div class="features_main_heading">
+                <h2>Why To Choose Us</h2>
+            </div>
+            <div><!------------- cards line start  ------------->
+                <div class="features_home_card"><!--- card 1 start --->
+                    <div class="features_home_card_icon"><span class="fas fa-globe-americas"></span></div>
+                    <div>
+                        <h4>Access Anywhere</h4>
+                        <p>
+                            Being online allows you and your respondents to access, administer and take your quizzes from anywhere at anytime.
+                        </p>
+                    </div>
+                </div><!--- card 1 close --->
+                <div class="features_home_card"><!--- card 2 start --->
+                    <div class="features_home_card_icon"><span class="fas fa-check"></span></div>
+                    <div>
+                        <h4>Auto Grading</h4>
+                        <p>
+                            Our website can automatically mark and grade your assessments, saving you the time to concentrate on whats important.
+                        </p>
+                    </div>
+                </div><!--- card 2 close --->
+                <div class="features_home_card"><!---  card 3 start --->
+                    <div class="features_home_card_icon"><span class="far fa-clock"></span></div>
+                    <div>
+                        <h4>Timed Tests</h4>
+                        <p>
+                                With our website it is easy to set a time limit or allow your learners an unlimited amount of time to complete your assessment.
+                        </p>
+                    </div>
+                </div><!--- card 3 close --->
+                <div class="features_home_card"><!--- card 4 start --->
+                    <div class="features_home_card_icon"><span class="fas fa-mobile-alt"></span></div>
+                    <div>
+                        <h4>Fully Responsive</h4>
+                        <p>
+                            Our website is fully responsive that alow you to use it in any device with the same experience and without any problem.
+                        </p>
+                    </div>
+                </div><!--- card 4 close  --->
+            </div><!----------- cards line close  ------------->
+        </div>
+    </div><!--------------------------------- features close  --------------------------------------->
+    
+
+
+
+    <div class="container-fluid demo"><!--------- demo container fluid start --------->
+        <div class="demo_home_image">
+            <div class="demo_main_heading"><!---- demo heading ------>
+                <h1>Request A Demo</h1>
+                <p>Feel the experience of all premium features of our website before to buy.</p>
+            </div><!--------- demo heading close --------->
+            <div><!--------- demo cards main start --------->
+                <div class="examiner_demo"><!---- demo card1 start ----->
+                    <h3>Examiner</h3>
+                    <ul>
+                        <li>Take a look at our new demo examiner feature.</li>
+                        <li>Demo mode is very essential to know about feature</li>
+                        <li>Examiner demo mode will ease your way to conduct test.</li>
+                    </ul>
+                    <hr>
+                    <div style="width: 100%;text-align: center;"><button>Demo For Examiner</button></div>
+                </div><!---- demo card1 close ----->
+    
+                <div></div><!---- extra but important ----->
+    
+                <div class="student_demo"><!---- demo card2 start ----->
+                    <h3>Student</h3>
+                    <ul>
+                        <li>Demo for Student mode to get familiar with test pattern.</li>
+                        <li>Student section provides you a detailed preview.</li>
+                        <li>Sign-up after the demo to get full access.</li>
+                    </ul>
+                    <hr>
+                    <div><button>Demo For Student</button></div>
+                </div><!---- demo card2 close ----->
+            </div><!--------- demo cards main close --------->
+        </div>
+    </div><!--------- demo container fluid close --------->
+    <div class="container-fluid footer">
+        <div>
+            <h3>About Us</h3>
+            <p>We provide you the most simplest and user friendly web portal to conduct online objective as well subjective exams and tests. Make your organization an e-organization with us.</p>
+            <div class="social">
+                <a class="footer_btn" href="facbook"><i class="fab fa-facebook-f"></i></a>
+                <a class="footer_btn" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="footer_btn" href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a class="footer_btn" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="footer_btn" href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div>
+             <h3>Important Links</h3>
+             <ul>
+                <li class="footer_li"><a href="#">Home</a></li>
+                <li class="footer_li"><a href="#">About</a></li>
+                <li class="footer_li"><a href="#">Features</a></li>
+                <li class="footer_li"><a href="#">Contact Us</a></li>
+                <li class="footer_li"><a href="#">Login As Admin</a></li>
+                <li class="footer_li"><a href="#">Login As Examiner</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Contact Us</h3>
+            <div>
+                <span class="fas fa-map-marker-alt"></span>
+                <p>Lalabad Goth, Naval Land Landhi Town, Karachi City, Sindh, Pakistan</p>
+            </div>
+            <div>
+                <span class="fas fa-envelope"></span>
+                <p>sostti@gmail.com</p>
+            </div>
+            <div>
+                <span class="fas fa-phone"></span>
+                <p>+92 21 34299245</p>
+            </div>     
+        </div>
+    </div>
+    <script>
+            var mail = document.getElementById('email');
+            var pass = document.getElementById('password');
+            var sel = document.getElementById('select');
+    
+        function function1(){
+           
+            if (mail.value == "admin@gmail.com" && pass.value == "admin123") {
+                window.open("admin/admin-main.html","_self")
+                
+            }
+            else if (mail.value == "student@gmail.com" && pass.value == "student123") {
+                window.open("index.html","_self")
+                
+            }
+            else if (mail.value == "center@gmail.com" && pass.value == "center123") {
+                window.open("index.html","_self")
+                
+            }
+            else{
+                
+            }
+        }
+
+        
+        </script>
+
+        
+
+
+
+
+
+    </body>
+</html>

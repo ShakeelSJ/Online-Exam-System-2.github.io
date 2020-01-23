@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/entry.css">
+</head>
+<body>
+    <div class="container-background">
+        <div class="container">
+        <div class="side-img">
+            <img src="../images/login.webp" alt="">
+        </div>
+        <div class="side-dta">
+            <!-- -------------------- Form ----------------------- -->
+            <form method="POST">
+                    <h2 class="ho2">LOGIN</h2>
+                <div class="input-fields">
+                    
+                    <input type="text" placeholder="Email" required id="email">
+                    <i class="fa fa-envelope icon"></i>
+
+                </div>
+                <div class="input-fields">
+                    
+                    <input type="password" placeholder="Password"  id="password">
+                    <i class="fa fa-lock icon"></i>
+
+                </div>
+                         <select required id="select">
+                             <option value="" disabled selected>Login as:</option>
+                            <option value="Student-l" >Student</option>
+                            <option value="Admin-l">Admin</option>
+                            <option value="Center-l">Center</option>
+                        </select><br>
+                <input type="button" value="LOGIN" id="buttn" onclick="function1()">
+                    <a href="signUp.html">Creat Account </a>
+                    <br><br><br>
+                    <a href="../index.html">Home</a>
+                
+            </form>
+            <!-- ---------------End Form ----------------------- -->
+        </div>
+        </div>
+    </div>
+    <script>
+        var mail = document.getElementById('email');
+        var pass = document.getElementById('password');
+        var sel = document.getElementById('select');
+
+    function function1(){
+       
+        if (mail.value == "admin@gmail.com" && pass.value == "admin123") {
+            window.open("admin/admin-main.html","_self")
+            
+        }
+        else if (mail.value == "student@gmail.com" && pass.value == "student123") {
+            window.open("index.html","_self")
+            
+        }
+        else if (mail.value == "center@gmail.com" && pass.value == "center123") {
+            window.open("index.html","_self")
+            
+        }
+    }
+    
+    </script>
+</body>
+</html>

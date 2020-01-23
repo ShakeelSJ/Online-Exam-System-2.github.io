@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination System</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/responsive_css.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/fonts.css">
+</head>
+<body>
+        <div class="container-bg" id="main_image"s></div>
+    <div id="main" style="z-index: -100">
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar-scroll">
+        <div class="navbar-header">
+            <div class="logo">
+                <span class="fas fa-book-reader logo-icon"></span> 
+                <p class="logo-text">
+                    OUR <span>LOGO</span>
+                </p> 
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#abc">		
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse navbar-right" id="abc">
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html" class="nav-li">HOME</a></li>
+                <li><a href="about.html" class="nav-li">ABOUT US</a></li>
+                <li><a href="features.html" class="nav-li">FEATURES</a></li>
+                <li class="active"><a href="#" class="nav-li">CONTACT US</a></li>
+                <li class="nested"><a href="login.html" class="nav-li">LOGIN</a>
+                    <!-- <ul class="nested-nav">
+                        <li><a href="#" class="nav-li">EXAM LOGIN</a></li>
+                        <li><a href="#" class="nav-li">ADMIN LOGIN</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <div class="carousel-caption" >
+            <h1>Contact Us</h1>
+            <p style="margin-top: 90px;font-size: 18px;">
+                <span class="fas fa-home"></span> HOME <span class="fas fa-long-arrow-alt-right"></span> CONTACT US
+            </p>
+            <!-- <button style="margin-top: 100px" class="btn btn-danger ccarousel-main-btn">SIGN UP</button> -->
+            <a href="signUp.html" style="margin-top: 55px" class="btn btn-danger carousel-main-btn" role="button">SIGN UP</a>
+        </div>
+    </div><!---------------------------- main close ---------------------->
+    <div class="container-fluid contact">
+        <section>
+            <div class="form">
+                <div class="contact_inner">
+                    <h4>Get in Touch</h4>
+                    <form class="form-horizontal">
+                        <input type="hidden" name="type" value = "demoRequest" />
+                        <div class="contact-form">
+                            <div class="section-field">
+                                <input id="name" type="text" placeholder="Name*" name="name">
+                            </div>
+                        <div class="section-field">
+                            <input type="email" placeholder="Email*" name="email">
+                        </div>
+                        <div class="section-field" style="margin-bottom: 20px;">
+                                <input type="text" placeholder="Phone*" name="phone">
+                            </div>
+                            <div class="section-field textarea">
+                                <textarea class="input-message" placeholder="Comment*" rows="6" name="message"></textarea>
+                            </div>
+                            <button>Send Message</button>
+                            <br/>
+                            <br>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.183970277639!2d67.2020866143192!3d24.82338145285757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb330650a65fd45%3A0x985db265ecce7ad7!2sSOS%20Technical%20Training%20Institue!5e0!3m2!1sen!2s!4v1566732963288!5m2!1sen!2s" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </section>
+
+        <section>
+            <div class="contact_box">
+                <div class="icon">
+                    <span class="fas fa-map-marker-alt"></span>
+                </div>
+                <div class="contact_box_content">
+                    <h4>Address</h4>
+                    <p>Lalabad Goth, Naval Land Landhi Town, Karachi City, Sindh, Pakistan</p>
+                </div>
+            </div>
+            <div class="contact_box">
+                <div class="icon">
+                    <span class="fas fa-phone"></span>
+                </div>
+                <div class="contact_box_content">
+                    <h4>Phone</h4>
+                    <p>+92 21 34299245 <br>+92 2134299245 <br>Mon-Fri 8:00am - 8:00pm<br></p>
+                </div>
+            </div>
+
+            <div class="contact_box">
+                <div class="icon">
+                    <span class="fas fa-envelope"></span>
+                </div>
+                <div class="contact_box_content">
+                    <h4>Mail</h4>
+                    <p>sostti@gmail.com <br>sostti@gmail.com <br> 24 X 7 online support<br></p>
+                </div>
+            </div>
+
+            <div class="contact_box">
+                <div class="contact_box_content">
+                    <h4 style="text-align: center;">We are in social</h4>
+                </div>
+                <div class="social">
+                    <a class="footer_btn contact_icons" href="facbook"><i class="fab fa-facebook-f"></i></a>
+                    <a class="footer_btn" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="footer_btn" href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a class="footer_btn" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="footer_btn" href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    <!------------- footer start --------------------------------->
+    <div class="container-fluid footer">
+        <div>
+            <h3>About Us</h3>
+            <p>We provide you the most simplest and user friendly web portal to conduct online objective as well subjective exams and tests. Make your organization an e-organization with us.</p>
+            <div class="social">
+                <a class="footer_btn" href="facbook"><i class="fab fa-facebook-f"></i></a>
+                <a class="footer_btn" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="footer_btn" href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a class="footer_btn" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="footer_btn" href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div>
+             <h3>Important Links</h3>
+             <ul>
+                <li class="footer_li"><a href="#">Home</a></li>
+                <li class="footer_li"><a href="#">About</a></li>
+                <li class="footer_li"><a href="#">Features</a></li>
+                <li class="footer_li"><a href="#">Contact Us</a></li>
+                <li class="footer_li"><a href="#">Login As Admin</a></li>
+                <li class="footer_li"><a href="#">Login As Examiner</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Contact Us</h3>
+            <div>
+                <span class="fas fa-map-marker-alt"></span>
+                <p>Lalabad Goth, Naval Land Landhi Town, Karachi City, Sindh, Pakistan</p>
+            </div>
+            <div>
+                <span class="fas fa-envelope"></span>
+                <p>sostti@gmail.com</p>
+            </div>
+            <div>
+                <span class="fas fa-phone"></span>
+                <p>+92 2134299245</p>
+            </div>     
+        </div>
+    </div>
+    </body>
+</html>

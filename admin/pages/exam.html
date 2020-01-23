@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Control Panel</title>        
+    
+    <link rel="stylesheet" href="../../css/bootstrap 4.min.css">
+    <link rel="stylesheet" href="../../css/mdb.min.css">    
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/panels.css">
+
+    <style>
+        .hide-show{
+            display: block;
+            width: 75%;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!--Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark secondary-color fixed-top lighten-1">
+            <a class="navbar-brand" href="#">Admin Panel</a>
+            <ul class="navbar-nav ml-auto nav-flex-icons" style="line-height: 32px;">
+
+              <li class="nav-item dropdown notifications-nav">
+                  <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="badge red">3</span> <i class="fas fa-bell"></i>
+                    <span class="d-none d-md-inline-block">Notifications</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">
+                      <i class="far fa-money-bill-alt mr-2" aria-hidden="true"></i>
+                      <span>Something</span>
+                      <span class="float-right"><i class="far fa-clock" aria-hidden="true"></i> 13 min</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="far fa-money-bill-alt mr-2" aria-hidden="true"></i>
+                      <span>Something</span>
+                      <span class="float-right"><i class="far fa-clock" aria-hidden="true"></i> 33 min</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-chart-line mr-2" aria-hidden="true"></i>
+                      <span>Something</span>
+                      <span class="float-right"><i class="far fa-clock" aria-hidden="true"></i> 53 min</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link waves-effect"><i class="fas fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link waves-effect"><i class="far fa-comments"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
+              </li>
+                  
+              <li class="nav-item avatar dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <img src="../../images/admin_image.jpg" style="width: 35px;" class="rounded-circle z-depth-0"
+                    alt="avatar image">
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+                  aria-labelledby="navbarDropdownMenuLink-55">
+                  <a class="dropdown-item" href="#">My account</a>
+                  <a class="dropdown-item" href="../../index.html">Log Out</a>
+                </div>
+              </li>
+            </ul>
+        </nav>
+      <!--/.Navbar -->
+
+    <div class="side_nav"><!-- side-nav -->
+        <section>
+            <div class="first-container">
+                    <div class="panel-logo">
+                        <p class="logo">
+                            <a href="#"><i class="fas fa-user"></i></a> 
+                        </p>                       
+                    </div> 
+                    <hr>
+                    <ul>
+                        <li><a href="../admin-main.html">
+                            <i class="fas fa-home"></i>
+                        </a>                        
+                        </li>
+                        <li><a href="profile.html">
+                            <i class="fas fa-user-circle"></i>
+                        </a></li>
+                        <li><a href="student.html">
+                            <i class="fas fa-user"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fas fa-book"></i>
+                        </a></li>
+                        <li><a href="question.html">
+                            <i class="fas fa-question-circle"></i>
+                        </a></li>
+                        <li><a href="notice.html">
+                            <i class="fas fa-th-list"></i>
+                        </a></li>
+                        <li><a href="result.html">
+                            <i class="fas fa-certificate"></i>
+                        </a></li>
+                       
+                    </ul>
+                <span id="panel-hide" class="close bottom-close"><i class="fa fa-angle-left"></i><i class="fa fa-angle-right"></i></span>
+            </div>
+            <div class="sec-container">
+                <div class="panel-text">
+                    <p class="text">
+                        <img src="../../images/admin_image.jpg" style="width: 50px;margin-left: 20px;" id="user_image" class="rounded-circle z-depth-0"
+                        alt="avatar image">
+                        <a href="#" style="margin-left: 10px;" > <span>User Name</span></a> 
+                    </p>                           
+                </div>
+                <hr>    
+                <ul>
+                    <li><a href="../admin-main.html">
+                        Dashboard
+                    </a>                        
+                    </li>
+                    <li><a href="profile.html">
+                        User Profile
+                    </a></li>
+                    <li><a href="student.html">
+                        Student Management
+                    </a></li>
+                    <li><a href="#">
+                        Examinations
+                    </a></li>
+                    <li><a href="question.html">
+                        Question
+                    </a></li>
+                    <li><a href="notice.html">
+                        Notice
+                    </a></li>
+                    <li><a href="result.html">
+                        Exam Results
+                    </a></li>
+                </ul>
+        </div>
+        </section>
+    </div><!-- /.side-nav -->
+    <!-------------- Dashboard ------------------->
+    <div class="body_content">
+        <div class="main_title">
+            <div class="col-md-5 col-8 align-self-center">
+                <h3 class="text-themecolor mb-0 mt-0">Manage Examination</h3>
+                <ol>
+                    <li><a href="#">Home</a></li>
+                    <li class="ml-3 text-muted"><i class="fa fa-angle-right mr-3"></i>Manage Examination</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-11 mb-4">
+                <div class="card profile-card">
+                  <!-- Classic tabs -->
+                  <div class="classic-tabs ">
+                  
+                  <ul class="nav tabs-cyan" id="myClassicTabShadow" role="tablist">
+                    <li class="nav-item ml-0">
+                      <a class="nav-link  waves-light active show" id="profile-tab-classic-shadow" data-toggle="tab" href="#profile-classic-shadow"
+                        role="tab" aria-controls="profile-classic-shadow" aria-selected="true">Examinations</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link waves-light" id="follow-tab-classic-shadow" data-toggle="tab" href="#follow-classic-shadow"
+                        role="tab" aria-controls="follow-classic-shadow" aria-selected="false">Add Exam</a>
+                    </li>
+                  </ul>
+                  
+                  <div class="tab-content card mb-0 mt-0" id="myClassicTabContentShadow">
+                    <div class="tab-pane fade active show" id="profile-classic-shadow" role="tabpanel" aria-labelledby="profile-tab-classic-shadow"><!-- tab 1 content -->
+                            <div class="table-responsive">
+                                    <table class="table text-center">
+                                      <thead>
+                                        <tr class="text-center">
+                                          <th scope="col">No.</th>
+                                          <th scope="col">Name</th>
+                                          <th scope="col">Deadline</th>
+                                          <th scope="col">Duration</th>
+                                          <th scope="col">Id</th>
+                                          <th scope="col">Status</th>
+                                          <th scope="col">Action</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">1</th>
+                                          <td>Exam 1</td>
+                                          <td>2/9/2019</td>
+                                          <td>5-min</td>
+                                          <td>Ex-32589</td>
+                                          <td class="text-danger">Inactive</td>
+                                          <td>
+                                            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">Select Action</button>
+                                              <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                              </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">2</th>
+                                          <td>Exam 2</td>
+                                          <td>12/9/2019</td>
+                                          <td>10-min</td>
+                                          <td>Ex-52686</td>
+                                          <td class="text-info">Active</td>
+                                          <td>
+                                              <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">Select Action</button>
+                                              <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Action</a>
+                                                  <a class="dropdown-item" href="#">Another action</a>
+                                                  <a class="dropdown-item" href="#">Something else here</a>
+                                                  <div class="dropdown-divider"></div>
+                                                  <a class="dropdown-item" href="#">Separated link</a>
+                                              </div>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td>Exam 3</td>
+                                          <td>13/9/2019</td>
+                                          <td>1-hour</td>
+                                          <td>Ex-46651</td>
+                                          <td class="text-info">Active</td>
+                                          <td>
+                                              <button class="btn btn-primary btn-sm dropdown-toggle " type="button" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">Select Action</button>
+                                              <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                              </div>
+                                        </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <hr class="my-0">
+    
+                                    <!-- Bottom Table UI -->
+                                    <div class="d-flex">
+                        
+                        
+                                    <!-- Pagination -->
+                                    <nav class="my-4">
+                                        <ul class="pagination pagination-circle pg-blue mb-0">
+                        
+                                        <!-- First -->
+                                        <li class="page-item disabled clearfix d-none d-md-block"><a class="page-link waves-effect waves-effect">First</a></li>
+                        
+                                        <!-- Arrow left -->
+                                        <li class="page-item disabled">
+                                            <a class="page-link waves-effect waves-effect" aria-label="Previous">
+                                            <span aria-hidden="true">«</span>
+                                            <span class="sr-only">Previous</span>
+                                            </a>
+                                        </li>
+                        
+                                        <!-- Numbers -->
+                                        <li class="page-item active"><a class="page-link waves-effect waves-effect">1</a></li>
+                                        <li class="page-item"><a class="page-link waves-effect waves-effect">2</a></li>
+                                        <li class="page-item clearfix d-none d-md-inline-block"><a class="page-link waves-effect waves-effect">3</a></li>
+                                        <li class="page-item clearfix d-none d-md-inline-block"><a class="page-link waves-effect waves-effect">4</a></li>
+                                        <li class="page-item clearfix d-none d-md-inline-block"><a class="page-link waves-effect waves-effect">5</a></li>
+                        
+                                        <!-- Arrow right -->
+                                        <li class="page-item">
+                                            <a class="page-link waves-effect waves-effect" aria-label="Next">
+                                            <span aria-hidden="true">»</span>
+                                            <span class="sr-only">Next</span>
+                                            </a>
+                                        </li>
+                        
+                                        <!-- First -->
+                                        <li class="page-item clearfix d-none d-md-block"><a class="page-link waves-effect waves-effect">Last</a></li>
+                        
+                                        </ul>
+                                    </nav>
+                                    <!-- /Pagination -->
+                        
+                                    </div>
+                                    <!-- Bottom Table UI -->
+                                    
+                    </div><!-- /.tab 1 content -->
+
+                    <div class="tab-pane fade" id="follow-classic-shadow" role="tabpanel" aria-labelledby="follow-tab-classic-shadow"><!-- tab 2 content -->
+                        <form>
+                            <!-- Default input -->
+                            <div class="form-group">
+                                <label>Exam Name label</label>
+                                <input type="text" class="form-control" placeholder="Enter Exam Name">
+                            </div>
+                            <!-- Default input -->
+                            <div class="form-group">
+                                <label>Exam Duration(Minutes)</label>
+                                <input type="text" class="form-control" placeholder="Enter Exam Duration">
+                            </div>
+                            <div class="form-group">
+                                <label>Passmark (%)</label>
+                                <input type="text" class="form-control" placeholder="Enter Passing Marks">
+                            </div>
+                            <div class="form-group">
+                                <label>Deadline</label>
+                                <input type="text" class="form-control datepicker" placeholder="Select Deadline">
+                            </div>
+                            <div class="form-group">
+                                <label>Terms And Conditions</label>
+                                <textarea class="form-control" placeholder="Enter terms and conditions" rows="6"></textarea>
+                            </div>
+                            <button class="btn btn-primary btn-md" type="submit">Submit</button>
+                        </form>
+
+
+
+                    </div><!-- /.tab 2 content -->
+                  </div>
+                  </div>
+                  
+                </div><!-- /.Classic tabs -->
+            </div><!-- ====== /.col md-8 for panel tabs etc ======= -->
+
+        </div><!-- ./row -->     
+    </div><!--/.body_content -->
+    
+
+   
+
+    <!---------------------- Links ------------------------>
+    <!-- <script src="../../js/compiled-4.8.9.min.js"></script> -->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/mdb.min.js"></script>
+    <script src="../../js/Chart.min.js"></script>
+    <script src="../../js/script.js"></script>
+</body>
+</html>
